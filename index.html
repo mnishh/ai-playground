@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the AI Playground</h1>
+        <p>Experiment with simple AI agent interactions directly in your browser!</p>
+    </header>
+
+    <main>
+        <section id="interaction">
+            <h2>Try AI Logic</h2>
+            <p>Enter a number, and the AI will calculate its square root using Python:</p>
+            <input type="number" id="input-number" placeholder="Enter a number">
+            <button onclick="calculateSqrt()">Calculate</button>
+            <p id="result"></p>
+        </section>
+
+        <section id="about">
+            <h2>About This Playground</h2>
+            <p>This is a simple static website running Python logic using Pyodide, hosted on GitHub Pages.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Your Name. Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.3/full/pyodide.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
